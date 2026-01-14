@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>اختبار حول رواية "جبل الجلود"</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #eef5f9;
+      color: #2c3e50;
+      padding: 2rem;
+      margin: 0;
+    }
+    .quiz-container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2980b9;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .question {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed #ddd;
+    }
+    .question h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: #16a085;
+    }
+    .options label {
+      display: block;
+      margin: 0.6rem 0;
+      padding: 0.6rem;
+      background: #f8f9fa;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .options input[type="radio"] {
+      margin-left: 0.8rem;
+      transform: scale(1.2);
+    }
+    .options label:hover {
+      background: #e3f2fd;
+    }
+    button {
+      display: block;
+      width: 200px;
+      margin: 2rem auto 1rem;
+      padding: 12px;
+      background: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover:not(:disabled) {
+      background: #1c6ea4;
+    }
+    button:disabled {
+      background: #bdc3c7;
+      cursor: not-allowed;
+    }
+    #result {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      min-height: 2rem;
+    }
+    .correct { color: #27ae60; }
+    .incorrect { color: #e74c3c; }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>اختبار حول رواية "جبل الجلود: نيران جاشي"</h1>
+
+    <!-- Questions -->
+    <div class="question">
+      <h3>السؤال 1: من هو مؤلف رواية "جبل الجلود: نيران جاشي"؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q1" value="a"> أ) نيراز جاشي</label>
+        <label><input type="radio" name="q1" value="b"> ب) شكري بلعيد</label>
+        <label><input type="radio" name="q1" value="c"> ج) توفيق العلوي</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 2: أين يقع حي "جبل الجلود" الذي تدور فيه أحداث الرواية؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q2" value="a"> أ) في مدينة صفاقس</label>
+        <label><input type="radio" name="q2" value="b"> ب) جنوب العاصمة تونس</label>
+        <label><input type="radio" name="q2" value="c"> ج) في ولاية الكاف</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 3: كيف وصف الكاتب روايته من حيث الشكل الفني؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q3" value="a"> أ) سيرة ذاتية</label>
+        <label><input type="radio" name="q3" value="b"> ب) نص ملحمي</label>
+        <label><input type="radio" name="q3" value="c"> ج) رواية بوليسية</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 4: ما نوع القضايا التي تعالجها الرواية بشكل رئيسي؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q4" value="a"> أ) قضايا بيئية وصحية</label>
+        <label><input type="radio" name="q4" value="b"> ب) قضايا دينية وفكرية</label>
+        <label><input type="radio" name="q4" value="c"> ج) قضايا اجتماعية وسياسية</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 5: ما المقصود بعبارة "النوي" في الرواية؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q5" value="a"> أ) لقب لزعيم نقابي في الحي</label>
+        <label><input type="radio" name="q5" value="b"> ب) كنية لرجل أجاب سائحة بـ"non_oui!"</label>
+        <label><input type="radio" name="q5" value="c"> ج) اسم لمصنع جلود قديم</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 6: هل تعتمد الرواية على بطل فردي تقليدي؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q6" value="a"> أ) نعم، البطل هو "العزري"</label>
+        <label><input type="radio" name="q6" value="b"> ب) نعم، البطل هو الكاتب نفسه</label>
+        <label><input type="radio" name="q6" value="c"> ج) لا، البطل هو تاريخ تونس المعاصر</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 7: ما العلاقة بين الواقع والتخييل في الرواية وفقًا للمؤلف؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q7" value="a"> أ) الرواية خيالية بالكامل</label>
+        <label><input type="radio" name="q7" value="b"> ب) الرواية وثائقية دون أي تخييل</label>
+        <label><input type="radio" name="q7" value="c"> ج) الرواية تجمع بين شخصيات وأحداث حقيقية وعنصر التخييل</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 8: أي من هذه الأحداث التاريخية لم يُذكر كخلفية في الرواية؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q8" value="a"> أ) الثورة التونسية</label>
+        <label><input type="radio" name="q8" value="b"> ب) أحداث الخبز</label>
+        <label><input type="radio" name="q8" value="c"> ج) حرب الخليج</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 9: ما الدلالة الرمزية لشخصية "النوي" في سياق الرواية؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q9" value="a"> أ) تمثل التعليم الحديث</label>
+        <label><input type="radio" name="q9" value="b"> ب) تمثل الانفصال عن الواقع واللامبالاة</label>
+        <label><input type="radio" name="q9" value="c"> ج) تمثل الهجرة الناجحة</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 10: كيف يصف توفيق العلوي طبيعة عمله "جبل الجلود"؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q10" value="a"> أ) كرواية فانتازيا مستوحاة من التاريخ</label>
+        <label><input type="radio" name="q10" value="b"> ب) كسيرة شخصية له</label>
+        <label><input type="radio" name="q10" value="c"> ج) كسيرة مدينة</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>السؤال 11: في رواية *"جبل الجلود: نيران جاشي"*، يرفض توفيق العلوي تقديم بطل فردي تقليدي... ما الدلالة الأعمق لهذا الخيار؟</h3>
+      <div class="options">
+        <label><input type="radio" name="q11" value="a"> أ) لأنه لم يستطع ابتكار شخصية رئيسية مقنعة</label>
+        <label><input type="radio" name="q11" value="b"> ب) لأنه يريد أن يُظهر أن الشعب التونسي كله كان بطل الثورة</label>
+        <label><input type="radio" name="q11" value="c"> ج) لأنه يسعى إلى تمجيد الدولة الحديثة</label>
+        <label><input type="radio" name="q11" value="d"> د) لأنه يرى أن الهوية التونسية لا يمكن اختزالها في فرد...</label>
+        <label><input type="radio" name="q11" value="e"> هـ) لأنه يعتقد أن الرواية يجب أن تكون وثيقة تاريخية</label>
+        <label><input type="radio" name="q11" value="f"> و) لأنه يحاول تجنّب الخلافات السياسية</label>
+      </div>
+    </div>
+
+    <button id="submitBtn">إرسال الإجابات</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      q1: 'c',
+      q2: 'b',
+      q3: 'b',
+      q4: 'c',
+      q5: 'b',
+      q6: 'c',
+      q7: 'c',
+      q8: 'c',
+      q9: 'b',
+      q10: 'c',
+      q11: 'd'
+    };
+
+    document.getElementById('submitBtn').addEventListener('click', function() {
+      const totalQuestions = Object.keys(correctAnswers).length;
+      let score = 0;
+      let allAnswered = true;
+
+      // Check if all questions are answered
+      for (let q in correctAnswers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+          allAnswered = false;
+          break;
+        }
+      }
+
+      if (!allAnswered) {
+        alert("يرجى الإجابة على جميع الأسئلة قبل الإرسال.");
+        return;
+      }
+
+      // Calculate score & lock inputs
+      for (let q in correctAnswers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        const userAnswer = selected.value;
+        const isCorrect = userAnswer === correctAnswers[q];
+        if (isCorrect) score++;
+
+        // Lock radio buttons
+        const radios = document.querySelectorAll(`input[name="${q}"]`);
+        radios.forEach(r => r.disabled = true);
+
+        // Optional: highlight correct/incorrect (not required but helpful)
+        const label = selected.closest('label');
+        label.classList.add(isCorrect ? 'correct' : 'incorrect');
+      }
+
+      // Show result
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `نتيجتك: ${score} من ${totalQuestions}`;
+      resultDiv.style.color = score >= totalQuestions * 0.7 ? '#27ae60' : '#e74c3c';
+
+      // Disable submit button
+      this.disabled = true;
+    });
+  </script>
+</body>
+</html>
